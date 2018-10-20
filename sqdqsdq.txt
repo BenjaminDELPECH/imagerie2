@@ -1,0 +1,47 @@
+NOUVELLE SOURCE ENVOYEE AU FRAGMENT SHADER
+
+TRANSMETTRE POINT 3D DU VERTEX SHADER AU FRAGMENT SHADER A LAIDE DUN VARYING
+
+VERTEX SHADER JE LAPPELLE 3 FOIS POUR CHAQUE SOMMET
+
+
+VARYING POSITION DANS FRAGMENT SHADER
+
+DANS vertex shader
+applique mvMatrix au sommet
+applique 3fois
+
+pour chaque point, le point, la normale + la source au bon endroit
+
+
+le point a eclairer, 
+point de la source, 
+la normale,
+
+
+Lambert: Lo=Li*Kd/Pi
+Kd entre 0 et 1.
+Li->puissance de la source
+exemple: vec3(1,1,1)
+
+
+
+MvMatrix*aVertexPosition
+
+
+Sphère lisse, 1 normale par sommet cest mieux.
+
+
+Un code par lambert
+lambert sphere lisse
+lamber sphere colorée(effet jolie si on veut)
+
+cos0: angle Vi=S-pt que jeclaire
+S-P normalisés
+dot(N,Vi)
+	
+
+
+Kd/Pi.  
+
+
